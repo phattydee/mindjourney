@@ -1,15 +1,15 @@
 {
-    "name": "My Web Guy | Small Business Web Design",
+    "name": "Mindjourney | Counselling & Psychotherapy",
     "email": "pd@pdgrp.ca",
-    "phoneForTel": "709-746-2625",
-    "phoneFormatted": "(709) 746-2625",
+    "phoneForTel": "709.501.0677",
+    "phoneFormatted": "(709) 501-0677",
     "address": {
-        "lineOne": "7 Plank Rd",
-        "lineTwo": "Second Address Line",
-        "city": "St. John's",
+        "lineOne": "Villa Nova Plaza, Suite 207",
+        "lineTwo": "130 Conception Bay Highway",
+        "city": "CBS",
         "state": "NL",
-        "zip": "A1C3E4",
-        "mapLink": "https://maps.app.goo.gl/noDw5SKoqqoPTdT78"
+        "zip": "A1W 3H9",
+        "mapLink": "https://maps.app.goo.gl/hki16Z5BondwwK659"
     },
-    "domain": "https://mywebguy.com"
+    "domain": "https://mindjourney.ca"
 }
