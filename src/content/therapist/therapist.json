@@ -1,0 +1,7 @@
+{
+	"layout": "layouts/therapist.html",
+	"tags": "therapist",
+	"permalink": "therapist/{{therapistname}}/index.html"
+}
+
+

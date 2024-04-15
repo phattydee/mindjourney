@@ -8,8 +8,34 @@ logo_url: https://codestitch.app/frontend/images/logo.png
 
 media_folder: "src/assets/images/blog"
 public_folder: "/assets/images/blog"
+slug:
+  encoding: "ascii"
+
+
+# up update collection fields the collection must be renamed (aka. recreated) as a new name and all fields update
 
 collections:
+  - name: "therapist"
+    label: "Therapists"
+    identifier_field: "therapistname"
+    folder: "src/content/therapist"
+    create: true
+    slug: "{{therapistname}}"
+    fields:
+      - { label: "Name", name: "therapistname", widget: "string" }
+      - { label: "Credentials", name: "tcredential", widget: "string" }
+      - { label: "Positition", name: "tposition", widget: "string" }
+      - { label: "Position Detail", name: "sub-position", widget: "string", required: false }
+      - { label: "Licence #1", name: "license1", widget: "string", required: false }
+      - { label: "License #2", name: "license2", widget: "string", required: false }
+      - { label: "Licence #3", name: "license3", widget: "string", required: false }
+      - { label: "Blurb", name: "blurb", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags (must include 'therapist')", name: "tags", widget: "list", default: ["therapist"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+    
   - name: "blog"
     label: "Blog"
     folder: "src/content/blog"
@@ -24,3 +50,4 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
