@@ -1,5 +1,8 @@
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 
+
+                            
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -35,6 +38,7 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
     }
+
     .cs-topper {
         font-size: var(--topperFontSize);
         line-height: 1.2em;
@@ -66,8 +70,7 @@
         max-width: 40.625rem;
         margin: 0;
         color: var(--bodyTextColor);
-    }
-                                
+    }                            
 
     // Button - can be replaced using CodeStitch's "Button" Stitches
     .cs-button-solid {
@@ -117,18 +120,14 @@
 @media only screen and (min-width: 0em) {
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-    /* roboto-regular - latin */
-    @font-face {
-        font-style: normal;
-        font-family: "Staatliches";
-        font-weight: 400;
-        font-display: swap;
-        src: local(""),
-            url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-regular.woff")
-                format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+/* staatliches-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/staatliches-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
     /* roboto-700 - latin */
     @font-face {
         font-style: normal;
@@ -136,7 +135,7 @@
         font-weight: 700;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+            url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
                 url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
@@ -1162,7 +1161,6 @@
             content: "";
             width: 100%;
             height: 100%;
-            background: #000;
             opacity: 0.7;
             display: block;
             position: absolute;
