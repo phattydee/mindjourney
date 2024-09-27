@@ -191,7 +191,7 @@
     #meet-team-1437 {
         .cs-card-group {
             max-width: 100%;
-            align-items: stretch;
+            align-items: flex-start;
             gap: clamp(3rem, 1.8vw, 1.25rem);
         }
 
@@ -387,7 +387,7 @@
             border-radius: 50%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: centtoper;
             transition: 0.3s background-color;
         }
 

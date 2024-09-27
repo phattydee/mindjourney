@@ -12,7 +12,6 @@
         padding-bottom: calc(200 / 16 * 1rem);
         /* prevents the topper line from causing an overflow */
         overflow: hidden;
-        position: relative;
         z-index: 1;
 
         .cs-background {
@@ -180,19 +179,6 @@
         }
     }
 }
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #hero-493 {
-            .cs-background {
-                &:before {
-                    opacity: 0.92;
-                }
-            }
-        }
-    }
-}
                                 
 
 /* Mobile - 360px */
@@ -307,9 +293,5 @@
     }
 }
 
-/* Large Desktop - Parallax Effect - 1600px */
-
-
-/* Dark Mode */
 
                                 
