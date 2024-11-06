@@ -13,13 +13,13 @@
     // Website colors
     :root {
         /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-        --primary: #ea5360;
+        --primary: #ea5374;
         --primaryLight: #ffba43;
         --secondary: #ffba43;
         --secondaryLight: #ffe7d3;
         --headerColor: #1f191e;
         --bodyTextColor: #4e4b66;
-        --bodyTextColorWhite: #fafbfc;
+        --bodyTextColorWhite: #272d33;
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
         /* 31px - 49px */
@@ -240,87 +240,7 @@
         font-size: 0.85vw;
     }
 }
-/*-- -------------------------- -->
-<---      Dark Mode Toggle      -->
-<--- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #dark-mode-toggle {
-            .cs-sun {
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
-
-            .cs-moon {
-                transform: translate(-50%, -150%);
-                opacity: 0;
-            }
-        }
-    }
-
-    #dark-mode-toggle {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: calc(90 / 16 * 1rem);
-        width: calc(48 / 16 * 1rem);
-        height: calc(48 / 16 * 1rem);
-        background: transparent;
-        border: none;
-        overflow: hidden;
-        padding: 0;
-        z-index: 1000;
-        transform: translateY(-50%);
-
-        img,
-        svg {
-            //center image inside button
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: calc(20 / 16 * 1rem);
-            height: calc(20 / 16 * 1rem);
-            pointer-events: none;
-        }
-
-        .cs-moon {
-            z-index: 2;
-            // Transition properties
-            transition:
-                transform 0.3s,
-                opacity 0.3s;
-            fill: #fff;
-        }
-
-        .cs-sun {
-            z-index: 1;
-            // Transition property
-            transform: translate(-50%, 100%);
-            opacity: 0;
-            transition:
-                transform 0.3s,
-                opacity 0.3s;
-        }
-    }
-}
-
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #dark-mode-toggle {
-        position: relative;
-        transform: none;
-        top: auto;
-        right: auto;
-        margin: 0;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
@@ -631,31 +551,7 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-    body.dark-mode {
-        #cs-navigation {
-            background-color: var(--dark);
 
-            .cs-logo {
-                /* makes it white */
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-line {
-                background-color: #fff;
-            }
-
-            .cs-ul-wrapper {
-                background-color: var(--medium);
-            }
-
-            .cs-li-link {
-                color: var(--bodyTextColorWhite);
-            }
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -1275,16 +1171,7 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #cta {
-            &:after {
-                display: none;
-            }
-        }
-    }
-}
+
 
 /*-- -------------------------- -->
 <---           Footer           -->
@@ -1530,11 +1417,4 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #footer {
-            background: #061623;
-        }
-    }
-}
+
