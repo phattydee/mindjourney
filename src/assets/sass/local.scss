@@ -78,7 +78,8 @@
             /* 16px - 20px */
             gap: clamp(1rem, 1.8vw, 1.25rem);
             position: relative;
-            align-items: stretch;
+            align-items: start;
+            grid-auto-rows: 1fr;
         }
 
         .cs-item {
@@ -130,6 +131,7 @@
             align-items: center;
             position: relative;
             z-index: 10;
+            height: 100%;
         }
 
         .cs-name {
