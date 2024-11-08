@@ -97,12 +97,10 @@
 
         .cs-picture {
             width: 100%;
-            min-height: calc(300 / 16 * 1rem);
+            height: 400px; /* Fixed height for all images */
             display: block;
             position: relative;
             z-index: 1;
-            /* removed at tablet */
-            aspect-ratio: 328/280;
 
             img {
                 width: 100%;
@@ -216,11 +214,8 @@
         }
 
         .cs-picture {
-            height: 100%;
-            /* 280px - 350px, resets at desktop */
-            min-height: clamp(17.5rem, 33vw, 21.875rem);
+            height: 400px; /* Keep consistent height */
             overflow: hidden;
-            aspect-ratio: initial;
 
             img {
                 transition: transform 0.6s, opacity 0.3s;
@@ -237,9 +232,7 @@
         }
 
         .cs-picture {
-            /* 245px - 338px */
-            height: clamp(15.3125rem, 27vw, 21.125rem);
-            min-height: calc(245 / 16 * 1rem);
+            height: 400px; /* Maintain consistent height */
         }
     }
 }
