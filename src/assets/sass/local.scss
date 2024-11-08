@@ -78,6 +78,7 @@
             /* 16px - 20px */
             gap: clamp(1rem, 1.8vw, 1.25rem);
             position: relative;
+            align-items: stretch;
         }
 
         .cs-item {
@@ -121,7 +122,6 @@
         .cs-info {
             text-align: center;
             width: 100%;
-            height: calc(200 / 16 * 1rem);
             /* prevents padding from affecting the height and width */
             box-sizing: border-box;
             padding: calc(24 / 16 * 1rem);
@@ -130,7 +130,6 @@
             align-items: center;
             position: relative;
             z-index: 10;
-            overflow-y: auto;
         }
 
         .cs-name {
