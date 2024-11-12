@@ -468,11 +468,13 @@
         }
   
         .cs-card-group {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1.5rem, 2vw, 2rem);
         }
-  
+
         .cs-item {
-            width: 47%;
+            width: 100%;
         }
     }
   }
@@ -480,11 +482,7 @@
   /* Small Desktop - 1024px */
   @media only screen and (min-width: 64rem) {
     #services-448 {
-        .cs-card-group {
-            flex-wrap: nowrap;
-        }
         .cs-item {
-            width: 100%;
             /* 144px - 274px */
             padding-top: clamp(9rem, 17.5vw, 17.125rem);
         }
