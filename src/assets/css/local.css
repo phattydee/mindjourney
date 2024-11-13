@@ -70,6 +70,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 1.8vw, 1.25rem);
     position: relative;
+    align-items: stretch;
   }
   #meet-team-1437 .cs-item {
     list-style: none;
@@ -78,7 +79,6 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     grid-column: span 12;
     position: relative;
@@ -87,12 +87,10 @@
   }
   #meet-team-1437 .cs-picture {
     width: 100%;
-    min-height: 18.75rem;
+    height: 400px; /* Fixed height for all images */
     display: block;
     position: relative;
     z-index: 1;
-    /* removed at tablet */
-    aspect-ratio: 328/280;
   }
   #meet-team-1437 .cs-picture img {
     width: 100%;
@@ -117,6 +115,7 @@
     align-items: center;
     position: relative;
     z-index: 10;
+    height: 100%;
   }
   #meet-team-1437 .cs-name {
     font-size: 1.25rem;
@@ -169,13 +168,17 @@
 @media only screen and (min-width: 48rem) {
   #meet-team-1437 .cs-card-group {
     max-width: 100%;
-    align-items: flex-start;
     gap: clamp(3rem, 1.8vw, 1.25rem);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
   }
   #meet-team-1437 .cs-item {
     max-width: 100%;
-    grid-column: span 4;
+    width: 100%;
+    grid-column: span 1;
     transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
   }
   #meet-team-1437 .cs-item:hover {
     box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
@@ -184,11 +187,8 @@
     color: var(--primary);
   }
   #meet-team-1437 .cs-picture {
-    height: 100%;
-    /* 280px - 350px, resets at desktop */
-    min-height: clamp(17.5rem, 33vw, 21.875rem);
+    height: 400px; /* Keep consistent height */
     overflow: hidden;
-    aspect-ratio: initial;
   }
   #meet-team-1437 .cs-picture img {
     transition: transform 0.6s, opacity 0.3s;
@@ -200,9 +200,7 @@
     max-width: 80rem;
   }
   #meet-team-1437 .cs-picture {
-    /* 245px - 338px */
-    height: clamp(15.3125rem, 27vw, 21.125rem);
-    min-height: 15.3125rem;
+    height: 400px; /* Maintain consistent height */
   }
 }
 /*-- -------------------------- -->
@@ -403,19 +401,17 @@
     max-width: 80rem;
   }
   #services-448 .cs-card-group {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 2vw, 2rem);
   }
   #services-448 .cs-item {
-    width: 47%;
+    width: 100%;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #services-448 .cs-card-group {
-    flex-wrap: nowrap;
-  }
   #services-448 .cs-item {
-    width: 100%;
     /* 144px - 274px */
     padding-top: clamp(9rem, 17.5vw, 17.125rem);
   }

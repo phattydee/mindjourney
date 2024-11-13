@@ -146,7 +146,7 @@
             font-weight: 700;
             text-align: center;
             margin: 0;
-            color: #1a1a1a;
+            color: var(--bodyTextColorWhite);
             min-width: calc(150 / 16 * 1rem);
             padding: 0 calc(24 / 16 * 1rem);
             background-color: var(--primary);
